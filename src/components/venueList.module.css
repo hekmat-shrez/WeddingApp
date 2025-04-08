@@ -1,0 +1,342 @@
+.venueFinder {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .searchHero {
+    background-color: #f9f9f9;
+    padding: 3rem 5%;
+    text-align: center;
+  }
+  
+  .searchHero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .searchContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .searchTabs {
+    display: flex;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .searchTab {
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .searchTabActive {
+    border-bottom: 3px solid #f8a5c2;
+    color: #f8a5c2;
+  }
+  
+  .searchForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 1rem;
+  }
+  
+  .searchInput {
+    padding: 0.75rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .searchBtn {
+    background-color: #7d5fff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0 1.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .searchBtn:hover {
+    background-color: #6c5ce7;
+  }
+  
+  .filterSection {
+    background-color: white;
+    padding: 1.5rem 5%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .filterContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .filterGroup {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filterLabel {
+    margin-right: 1rem;
+    font-weight: 500;
+  }
+  
+  .filterSelect {
+    padding: 0.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 0.5rem;
+  }
+  
+  .viewToggle {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .viewBtn {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .viewBtnActive {
+    background-color: #f9f9f9;
+  }
+  
+  .resultsSection {
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .resultsHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .resultsCount {
+    font-size: 1.2rem;
+  }
+  
+  .sortSelect {
+    padding: 0.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+  }
+  
+  .venueGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .venueList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .venueCard {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .venueCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .venueImage {
+    height: 200px;
+    background-color: #eee;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .venueImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+  
+  .venueCard:hover .venueImage img {
+    transform: scale(1.05);
+  }
+  
+  .venueBadge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: #f8a5c2;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+ 
+
+  .venueDetails {
+    padding: 1.5rem;
+  }
+  
+  .venueName {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .venueLocation {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .venuePrice {
+    font-weight: 500;
+    color: #7d5fff;
+    margin-bottom: 1rem;
+  }
+  
+  .venueRating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+  }
+
+  .ratingValue  {
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  .stars {
+    color: #ffc107;
+    margin-right: 0.5rem;
+  }
+  
+  .reviewCount {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .venueActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .actionBtn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e0e0e0;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+  }
+  
+  .contactBtn {
+    background-color: #f8a5c2;
+    color: white;
+    border-color: #f8a5c2;
+  }
+  
+  .contactBtn:hover {
+    background-color: #f78fb3;
+  }
+  
+  .saveBtnSaved {
+    color: #f8a5c2;
+  }
+  
+  .saveBtn:hover {
+    background-color: #f9f9f9;
+  }
+
+  .actionBtn:hover { 
+    background-color: #f9f9f9;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  
+  .pageBtn {
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border: 1px solid #e0e0e0;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .pageBtnActive {
+    background-color: #7d5fff;
+    color: white;
+    border-color: #7d5fff;
+  }
+  
+  @media (max-width: 768px) {
+    .searchForm {
+      grid-template-columns: 1fr;
+    }
+    
+    .filterContainer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .filterGroup {
+      margin-bottom: 1rem;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    
+    .filterSelect {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+    
+    .viewToggle {
+      margin-top: 1rem;
+    }
+    
+    .resultsHeader {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .sortSelect {
+      margin-top: 1rem;
+      width: 100%;
+    }
+  }

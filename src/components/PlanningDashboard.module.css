@@ -1,0 +1,721 @@
+/* Global Styles */
+.dashboardContainer {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.dashboardTitle {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Container for both columns */
+.dashboardContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 30px;
+}
+
+/* To-Do Section */
+.todoSection {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.todoTitle {
+  color: #555;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.addTask {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.taskInput {
+  flex-grow: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+
+.todoList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.todoItem:last-child {
+  border-bottom: none;
+}
+
+.checkbox {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: #777;
+}
+
+
+
+.dueDate label {
+  margin-right: 5px;
+  font-size: 0.9em;
+  color: #777;
+}
+
+.dateInput {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Budget Section */
+.budgetSection {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.addBudgetCategory {
+  margin-bottom: 20px;
+}
+
+.budgetInput {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.addButton {
+  padding: 10px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.addButton:hover {
+  background-color: #45a049;
+}
+
+.budgetItem {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deleteButton {
+  background-color: #FF5722;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.deleteButton:hover {
+  background-color: #e64a19;
+}
+
+/* Timeline Section */
+.timelineSection {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.timelineSection ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.timelineSection li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.timelineSection li:last-child {
+  border-bottom: none;
+}
+
+.timelineSection li strong {
+  font-weight: bold;
+  color: #333;
+  width: 150px;
+}
+
+.timelineSection li span {
+  color: #777;
+}
+
+/* Vendor Section */
+.vendorsSection {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.vendorsSection ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.vendorsSection li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.vendorsSection li:last-child {
+  border-bottom: none;
+}
+
+.vendorsSection li strong {
+  font-weight: bold;
+  color: #333;
+  width: 150px;
+}
+
+.vendorsSection li span {
+  color: #777;
+}
+
+/* Utility Styles */
+.sectionTitle {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.sectionTitle small {
+  font-size: 14px;
+  color: #999;
+}
+
+.addTaskButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.addTaskButton:disabled:hover {
+  background-color: #ccc;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .dashboardContent {
+    grid-template-columns: 1fr; /* Stacked layout for smaller screens */
+  }
+
+  .todoSection, .budgetSection {
+    margin-bottom: 20px;
+  }
+}
+
+/* Budget Section */
+.budgetSection {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.addBudgetCategory {
+  margin-bottom: 20px;
+}
+
+.budgetInput {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.addButton {
+  padding: 10px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.addButton:hover {
+  background-color: #45a049;
+}
+
+.budgetItem {
+  display: flex;
+  justify-content: space-between;  /* This ensures the two elements are spaced evenly */
+  align-items: center; /* Aligns items vertically within each budget item */
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.budgetItem:last-child {
+  border-bottom: none;
+}
+
+.budgetItem strong {
+  font-weight: bold;
+  color: #333;
+  width: 200px;  /* Ensure the budget category name has consistent width */
+  display: inline-block; /* Keep the budget category name in one line */
+}
+
+.budgetItem span {
+  color: #777;
+  text-align: right;  /* Align the price to the right */
+  min-width: 100px; /* Ensure the price column is wide enough */
+  font-size: 16px; /* Adjust font size for better readability */
+}
+
+/* Styling for the Delete Button */
+.deleteButton {
+  background-color: #FF5722;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.deleteButton:hover {
+  background-color: #e64a19;
+}
+
+/* Timeline and Vendors Section - Same as before */
+.timelineSection,
+.vendorsSection {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.timelineSection ul,
+.vendorsSection ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.timelineSection li,
+.vendorsSection li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.timelineSection li:last-child,
+.vendorsSection li:last-child {
+  border-bottom: none;
+}
+
+.timelineSection li strong,
+.vendorsSection li strong {
+  font-weight: bold;
+  color: #333;
+  width: 150px;
+}
+
+.timelineSection li span,
+.vendorsSection li span {
+  color: #777;
+}
+
+/* Add some styles for the edit buttons */
+.editButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.editButton:hover {
+  background-color: #45a049;
+}
+
+/* Add some styling for the input fields in edit mode */
+.budgetInput {
+  padding: 8px;
+  font-size: 14px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.addButton {
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.addButton:hover {
+  background-color: #45a049;
+}
+
+/* Optional: Style the Save/Cancel buttons for better UI */
+.addButton {
+  margin-left: 10px;
+}
+
+
+/* Container for the entire dashboard */
+.dashboardContainer {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.dashboardTitle {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* To-Do Section */
+.todoSection {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.todoTitle {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Task input styling */
+.addTask {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.taskInput {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+
+.addTaskButton {
+  background-color: greenyellow;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* To-Do List Styling */
+.todoList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.todoItem:last-child {
+  border-bottom: none;
+}
+
+.checkbox {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.dueDate {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.dueDate label {
+  margin-right: 5px;
+  font-size: 0.9em;
+  color: #777;
+}
+
+.dateInput {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Budget Section */
+.budgetSection {
+  margin-top: 30px;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.addBudgetCategory {
+  margin-bottom: 15px;
+}
+
+.budgetInput {
+  margin-right: 10px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.addButton {
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: #45a049;
+}
+
+/* Budget List */
+.budgetItem {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.budgetItem strong {
+  margin-right: 10px;
+}
+
+.budgetItem .buttons {
+  display: flex;
+  gap: 10px; /* Ensures space between buttons */
+}
+
+.editButton,
+.deleteButton {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+}
+
+.editButton {
+  background-color: #ffa500;
+  color: white;
+}
+
+.editButton:hover {
+  background-color: #ff8c00;
+}
+
+.deleteButton {
+  background-color: red;
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: darkred;
+}
+
+.editButton, .deleteButton {
+  margin: 0;
+}
+
+/* To-Do Section */
+.todoSection {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.todoTitle {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Task input styling */
+.addTask {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.taskInput {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+
+.addTaskButton {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.addTaskButton:hover {
+  background-color: #45a049;
+}
+
+.todoItem {
+  display: flex;
+  flex-direction: row; /* Ensure horizontal layout */
+  align-items: center; /* Vertically align elements */
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  justify-content: space-between; /* Space out items */
+}
+
+.todoItem:last-child {
+  border-bottom: none;
+}
+
+.checkbox {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.dueDate {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.dueDate label {
+  margin-right: 5px;
+  font-size: 0.9em;
+  color: #777;
+}
+
+.dateInput {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Align items properly in the To-Do List */
+.todoItem > span {
+  flex-grow: 1; /* Allow the task text to take up available space */
+}
+
+.dueDate {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.guestSection {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.tabs {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  margin-left: 10px;
+}
+
+.tabs .activeTab {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.dashboardContainer {
+  padding: 20px;
+}
+
+.dashboardTitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Add styles for To-Do List, Budget, and Guest sections */
+.todoSection,
+.budgetSection,
+.guestSection {
+  margin-bottom: 40px;
+}

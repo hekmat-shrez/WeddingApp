@@ -1,0 +1,153 @@
+.detailsContainer {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .name {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .location {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .imageGallery {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+  }
+  
+  .image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    flex-shrink: 0;
+  }
+  
+  .description {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+  }
+  
+  .sectionTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .descriptionText {
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .amenities {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    flex-direction: row;
+  }
+  
+  .amenitiesList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+  }
+  
+  .amenityItem {
+    margin-bottom: 8px;
+  }
+  
+  .contactInfo {
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .contactLink {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .galleryControls {
+    display: flex;
+    justifyContent: center;
+    margin-bottom: 20px;
+  }
+  
+  .galleryButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+  }
+  
+  .contactButton {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  
+  .pageBtn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e0e0e0;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .pageBtn:hover:not(:disabled) {
+    background-color: #f8a5c2;
+    border-color: #f8a5c2;
+    color: white;
+  }
+  
+  .pageBtnActive {
+    background-color: #7d5fff;
+    color: white;
+    border-color: #7d5fff;
+  }
+  
+  .pageBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
